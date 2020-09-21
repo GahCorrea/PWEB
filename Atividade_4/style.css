@@ -1,0 +1,84 @@
+@charset: "UTF-8";
+
+:root {
+    --color-background: #D4C2FF;
+    font-size: 60%;
+    font-family: "Arial", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font: 500 1.6rem "Arial";
+}
+
+header {
+    height: 7vh;
+    text-align: center;
+}
+
+article {
+    font: 500 1.3rem "Arial";
+    flex: 1;
+}
+
+aside {
+    flex: 0 0 20vw;
+    font: 500 1.4rem "Arial";
+}
+
+footer {
+    height: 7vh;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#vp {
+    display: block;
+    border: auto;
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+#ld {
+    display: block;
+    border: auto;
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+#star {
+    display: block;
+    border: auto;
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+#brmodelo {
+    display: block;
+    border: auto;
+    padding-top: 5rem;
+    text-align: justify;
+}
+
+img {
+    height: 128px;
+    width: 128px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
