@@ -10,8 +10,12 @@ function verifica() {
     } else {
         alert("O maior número é: " + num3);
     }
-    if (num1 == num2 || num1 == num3) {
-        alert("O número que se repete é: " + num1);
+    if (num1 === num2 || num1 === num3) {
+        const repeat = num1;
+        alert("O número que se repete é: " + repeat);
+    }else {
+        const repeat = num2;
+        alert("O número que se repete é: " + repeat);
     }
     
     document.getElementById('num1').value = '';
