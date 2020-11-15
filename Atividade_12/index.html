@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cirando um Formulário</title>
+    <script src="forms.js"></script>
+</head>
+
+<body>
+    <h1>Formulário Principal</h1>
+
+    <form name="Contato" id="contato" action="teste" method="post" onsubmit="validarDados()">
+        <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p>
+                <label>Nome: </label><br /><input name="Nome Usuário" id="nomeUsuario" type="text" size="35" placeholder="Digite seu nome" autofocus/>
+            </p>
+            <p>
+                <label>E-mail: </label><br /><input name="Email Usuário" id="emailUsuario" type="email" size="50" placeholder="Digite seu e-mail" />
+            </p>
+            <p>
+                <label>Comentário: </label><br /><textarea name="Comentário" id="comentario" cols="50" rows="10" placeholder="Digite aqui seu comentário"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pesquisa</legend>
+            <h2>Primeira vez nesta página?</h2>
+            <input name="escolha" id="esim" type="radio" /><label>Sim!</label>
+            <input name="escolha" id="enao" type="radio" checked/><label>Não!</label>
+            <p>
+                <input name="Enviar" id="enviar" type="submit" form="contato" value="Enivar" />
+                &nbsp;&nbsp;&nbsp;
+                <input name="Limpar" id="limpar" type="reset" form="contato" value="Limpar" >
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
